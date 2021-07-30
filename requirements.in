@@ -1,0 +1,8 @@
+# To generate requirements.txt, run:
+# pip-compile --generate-hashes
+black
+bump2version
+flake8
+ipdb
+ipython
+isort
