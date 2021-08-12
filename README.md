@@ -19,6 +19,8 @@ actions:
         cohort: output/input.bak.csv
 ```
 
+It is a dependency of the job-runner integration tests.
+
 ## Development
 
 Let's not get carried away, minimal-action should be *minimal*. If you must, then...
