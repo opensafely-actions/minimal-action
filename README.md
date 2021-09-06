@@ -1,7 +1,7 @@
 # minimal-action
 
 An action to test actions. It's the least an action can do: it accepts a file as input
-and writes the same file as output, with the suffix "bak" before the final suffix.
+and writes the same file as output, with a configurable suffix (".bak" by default) before the final suffix.
 
 ```yaml
 actions:

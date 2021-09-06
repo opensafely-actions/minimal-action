@@ -16,7 +16,7 @@ def backup(input_file, config):
     backup exists, then it will be overwritten.
 
     Args:
-        input_file: A `pathlib.Path` representing the file to backup.
+        input_file: `pathlib.Path` representing the file to backup
         config: Dictionary of configuration values
 
     Raises:
