@@ -34,10 +34,5 @@ uv run ruff format
 
 ## Releasing
 
-Simply tag a commit with `bump-my-version`:
-
-```sh
-uv run bump-my-version minor
-```
-
-Don't forget to `git push --tags`.
+A [GitHub action workflow](.github/workflows/tag.yaml) automatically tags the
+action on pushes to main.
