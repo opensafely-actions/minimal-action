@@ -1,2 +1,14 @@
-[tool.isort]
-profile = "black"
+[project]
+name = "minimal-action"
+version = "1.2.0"
+description = "Minimal action for testing actions"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "bump-my-version",
+    "pre-commit",
+    "ruff",
+]

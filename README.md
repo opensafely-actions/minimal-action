@@ -28,31 +28,16 @@ Let's not get carried away, minimal-action should be *minimal*. If you must, the
 Create and activate a new virtual environment:
 
 ```sh
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-Install `pip-tools` and sync:
-
-```sh
-pip install pip-tools
-pip-sync
-```
-
-`black`, `flake8`, and `isort` are available:
-
-```sh
-black .
-flake8 .
-isort .
+uv run ruff check
+uv run ruff format
 ```
 
 ## Releasing
 
-Simply tag a commit with `bump2version`:
+Simply tag a commit with `bump-my-version`:
 
 ```sh
-bump2version minor
+uv run bump-my-version minor
 ```
 
 Don't forget to `git push --tags`.

@@ -1,1 +1,1 @@
-run: python:latest python action/__main__.py
+run: python:v2 python action/__main__.py
