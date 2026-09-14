@@ -1,0 +1,25 @@
+---
+name: Tag new version
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: tag-new-version-group
+
+jobs:
+  
+  tag-new-version:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      - name: Tag new version
+        uses: mathieudutour/github-tag-action@a22cf08638b34d5badda920f9daf6e72c477b07b
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          create_annotated_tag: true
